@@ -1,0 +1,149 @@
+body {
+    background-image: url("images/background.jpeg");
+    background-size: cover; /*Ensures that the image covers the entire viewpoint.*/
+    background-repeat: no-repeat; /*Prevents the background from repeating.*/
+    background-attachment: fixed; /*Prevents the background from moving while scrolling.*/
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+            'header header header header header header'
+            'menu main main main main right'
+            'menu footer footer footer footer right';
+    gap: 2%;
+    padding: 5%;
+}
+
+.grid-container > *  { /*All elements inside the grid container.*/
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.logo-container {
+    display: flex; /*Ensures that the logo and the text is on the same line.*/
+    align-items: center; /*Centers items vertically.*/
+    justify-content: center; /*Centers items horizontally.*/
+}
+
+.logo-container h1 {
+    background-color: rgba(255, 255, 255, 0.7); /* White color with 70% transparency */
+}
+
+.logo-container img {
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+nav {
+    grid-area: menu;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+    line-height: 30px;
+    max-height: 11%;
+}
+
+nav h2 {
+    text-decoration: underline;
+}
+
+nav a {
+    color: dodgerblue;
+}
+
+nav ul li:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+main {
+    grid-area: main;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-weight: bold;
+    line-height: 27px;
+}
+
+main h2 {
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+
+main p {
+    margin-top: 5px;
+}
+
+.early-life-container {
+    display: flex;
+    align-items: center;
+}
+
+#early-life-img {
+    width: 40%;
+}
+
+aside {
+    grid-area: right;
+    display: block;
+}
+
+.button {
+    background-color: dodgerblue;
+    color: white;
+    padding: 6px 10px; /*Padding instead of height and width for more flexibility.*/
+    border-radius: 5px; /*Makes the borders more round.*/
+    cursor: pointer; /*Enables pointer when hovering over the button.*/
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 8%; /*Adds 0.5% of the total width of the page as space to the right.*/
+    margin-bottom: 10%;
+    transition: opacity 0.15s; /*Makes the transition from normal to more see through in 0.15s*/
+}
+
+.button:hover {
+    opacity: 0.8; /*Makes the button see through when hovering over it. Range 1 to 0*/
+    box-shadow: 5px 5px 5px gray; /*Adds a shadow to behind the button.*/
+}
+
+.button:active {
+    background-color: green; /*Makes the button green when clicked.*/
+}
+
+aside span {
+    padding: 6px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+aside ul {
+    background-color: rgba(255, 255, 255, 0.7);
+    max-width: 50%;
+    padding-left: 10%;
+}
+
+footer {
+    grid-area: footer;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.7);
+    line-height: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    .grid-container {
+        grid-template-areas:
+            'header'
+            'menu'
+            'main'
+            'right'
+            'footer';
+    }
+
+    nav {
+        max-height: none;
+    }
+}

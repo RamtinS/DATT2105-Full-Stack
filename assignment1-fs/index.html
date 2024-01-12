@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramtin Samavat biography</title>
+    <link rel="stylesheet" href="styles.css"> <!--Add CSS to the HTML file.-->
+    <link rel="icon" href="images/rs_logo.png" type="image/x-icon"> <!--Add own logo in browser page.-->
+</head>
+<body>
+
+<div class="grid-container">
+    <header>
+        <div class="logo-container"> <!--Div works like a box/container.-->
+            <img src="images/rs_logo.png" alt="RS logo">
+            <h1> Ramtin Samavat biography </h1>
+        </div>
+    </header>
+
+    <nav> <!--Navigation information on the website.-->
+        <h2> Table of contents </h2>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#early-life">Early life</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#career">Career</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 id="introduction"> Introduction </h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore fuga impedit iure
+            iusto laboriosam nam repellendus. Harum non quas sunt. Adipisci aperiam architecto
+            doloremque est magnam, nisi quaerat reiciendis tempore! Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. A aliquam architecto autem consequatur corporis eligendi
+            enim, fugiat hic illum labore, neque nobis qui repellendus reprehenderit tempora tempore
+            unde voluptas voluptate! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Accusamus blanditiis consectetur delectus eligendi facilis hic iste possimus quaerat sapiente
+            vero. Ad aliquam commodi delectus deserunt earum fugiat ipsam repellat sed. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit. Ab architecto autem corporis dolore doloremque
+            eaque expedita fugit harum impedit iure magni, mollitia nobis perferendis, porro quaerat quod quos sed tempora!
+        </p>
+
+        <h2 id="early-life"> Early life </h2>
+        <div class="early-life-container">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore fuga impedit iure
+                iusto laboriosam nam repellendus. Harum non quas sunt. Adipisci aperiam architecto
+                doloremque est magnam, nisi quaerat reiciendis tempore! Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. A aliquam architecto autem consequatur corporis eligendi
+                enim, fugiat hic illum labore, neque nobis qui repellendus reprehenderit tempora tempore
+                unde voluptas voluptate! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusamus blanditiis consectetur delectus eligendi facilis hic iste possimus quaerat sapiente
+                vero. Ad aliquam commodi delectus deserunt earum fugiat ipsam repellat sed. Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit. Ab architecto autem corporis dolore doloremque
+                eaque expedita fugit harum impedit iure magni, mollitia nobis perferendis, porro quaerat quod quos sed tempora!
+            </p>
+            <img src="images/picture_ramtin.jpeg" alt="picture of Ramtin" id="early-life-img">
+        </div>
+
+        <h2 id="education"> Education </h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore fuga impedit iure
+            iusto laboriosam nam repellendus. Harum non quas sunt. Adipisci aperiam architecto
+            doloremque est magnam, nisi quaerat reiciendis tempore! Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. A aliquam architecto autem consequatur corporis eligendi
+            enim, fugiat hic illum labore, neque nobis qui repellendus reprehenderit tempora tempore
+            unde voluptas voluptate! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Accusamus blanditiis consectetur delectus eligendi facilis hic iste possimus quaerat sapiente
+            vero. Ad aliquam commodi delectus deserunt earum fugiat ipsam repellat sed. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit. Ab architecto autem corporis dolore doloremque
+            eaque expedita fugit harum impedit iure magni, mollitia nobis perferendis, porro quaerat quod quos sed tempora!
+        </p>
+
+        <h2 id="career"> Career </h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore fuga impedit iure
+            iusto laboriosam nam repellendus. Harum non quas sunt. Adipisci aperiam architecto
+            doloremque est magnam, nisi quaerat reiciendis tempore! Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. A aliquam architecto autem consequatur corporis eligendi
+            enim, fugiat hic illum labore, neque nobis qui repellendus reprehenderit tempora tempore
+            unde voluptas voluptate! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Accusamus blanditiis consectetur delectus eligendi facilis hic iste possimus quaerat sapiente
+            vero. Ad aliquam commodi delectus deserunt earum fugiat ipsam repellat sed. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit. Ab architecto autem corporis dolore doloremque
+            eaque expedita fugit harum impedit iure magni, mollitia nobis perferendis, porro quaerat quod quos sed tempora!
+        </p>
+
+    </main>
+
+    <aside> <!--Sidebars, related content but not the main.-->
+        <button class="button" onclick="increaseNumber()">
+            Increase number
+        </button>
+        <span id="number-display">0</span>
+
+        <button class="button" onclick="toggleFooter()">
+            Toggle footer
+        </button>
+
+        <button class="button" onclick="getRandomFruits()">
+            Random fruits
+        </button>
+
+        <ul id="random-words-list"></ul>
+
+    </aside>
+
+    <footer id="footer">
+        <p>
+            <strong> Author: </strong> Ramtin Samavat
+            <br> <strong> Last updated: </strong> Jan 10, 2024.
+            <br> <strong> Visit my </strong> <a href="https://github.com/RamtinS"> GitHub</a>
+        </p>
+    </footer>
+
+</div>
+
+<script src="userInterface.js"></script> <!--Implements JavaScript -->
+
+</body>
+</html>
