@@ -1,0 +1,18 @@
+{
+  "feedbacks": [
+    {
+      "id": "f8f0",
+      "firstName": "Ramtin",
+      "lastName": "Samavat",
+      "email": "ramtinfs@stud.ntnu.no",
+      "message": "Bra kalkulator. "
+    },
+    {
+      "id": "fd3b",
+      "firstName": "Maria",
+      "lastName": "Scott",
+      "email": "marias@ntnu.com",
+      "message": "Test message"
+    }
+  ]
+}
