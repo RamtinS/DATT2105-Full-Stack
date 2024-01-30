@@ -1,0 +1,11 @@
+{
+  "feedbacks": [
+    {
+      "id": "fd3b",
+      "firstName": "Maria",
+      "lastName": "Scott",
+      "email": "marias@ntnu.com",
+      "message": "Test message"
+    }
+  ]
+}
