@@ -1,0 +1,18 @@
+{
+  "feedbacks": [
+    {
+      "id": "fd3b",
+      "firstName": "Maria",
+      "lastName": "Scott",
+      "email": "marias@ntnu.com",
+      "message": "Test message"
+    },
+    {
+      "id": "8b83",
+      "firstName": "test",
+      "lastName": "test",
+      "email": "geir@ntnu.no",
+      "message": "hei"
+    }
+  ]
+}
